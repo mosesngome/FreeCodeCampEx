@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19 VACCINE SURVEY</title> 
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Anti-COVID-19 Vaccine Survey Form</h1>
+    <p id="description">Please help us carry out a survey by filling this form.</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name: <input id="name" type="text" required placeholder="Enter your name"></label>
+        <label id="email-label">Email: <input id="email" type="email" required placeholder="Enter your email"></label>
+        <label id="number-label">Enter your age (years): <input id="number" type="number" min="15" max="90" required placeholder="Enter your age"></label>
+      </fieldset>
+      <fieldset>
+        <label>
+          How did you know about the Covid-19 vaccine?
+          <select id="dropdown">
+            <option value="">(select one)</option>
+          <option value="1">From a friend</option>  
+          <option value="">Through the net</option>
+          <option value="">Through TV</option>
+        </label>
+        </select>
+          <label>
+          Are you planning to get the COVID-19 vaccine?</label>
+          <label>
+          <input type="radio" name="yes" class="inline" value="6">Yes
+          </label>
+          <label>
+            <input type="radio" name="yes" class="inline" value="7">No
+          </label>
+          <label>
+            <input type="radio" name="yes" class="inline" value="8">Not sure
+          </label>
+    </fieldset>
+          <fieldset>     <label>Is there anyone in the family having any of the following respiratory symptoms?</label>
+            <label><input type="checkbox" value="1" class="inline">Fever</label>
+            <label><input type="checkbox" value="2" class="inline">Sore Throat</label>
+            <label><input type="checkbox" value="3" class="inline">Cough</label>
+            <label><input type="checkbox" value="4" class="inline">Shortness of Breath
+          </label>
+          <label>Would you advice one with any of the above symptoms to do a COVID-19 test? If yes, explain, if no, explain
+            <textarea name="advice" rows="3" cols="30" placeholder="I will advice ..."></textarea>
+          </label>
+          </fieldset>
+          <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
